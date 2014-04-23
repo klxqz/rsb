@@ -1,7 +1,6 @@
-fsdfsdf
-{*
-{if $auto_submit}
-    <i class="icon16 loading"></i> <em>Перенаправление на сайт AlfaBank для оплаты...</em>
+
+{if $auto_submit && 0}
+    <i class="icon16 loading"></i> <em>Перенаправление на сайт Банка для оплаты...</em>
     <br /><br />
     <script type="text/javascript">
     setTimeout(function () {
@@ -9,5 +8,6 @@ fsdfsdf
     }, 3000);
     </script>
     {/if}
-    <button onclick="document.location.href = '{$form_url}'">Оплатить заказ через AlfaBank</button>
-    *}
+    
+    <button onclick="document.location.href = '{$form_url}'">Оплатить заказ через Банк Русский Стандарт</button>
+    

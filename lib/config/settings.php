@@ -1,17 +1,23 @@
 <?php
 return array(
 
-    'userName'    => array(
+    'pemFile'    => array(
         'value'        => '',
-        'title'        => 'Логин магазина',
-        'description'  => 'Логин магазина, полученный при подключении',
-        'control_type' => 'input',
+        'title'        => '*.pem файл',
+        'description'  => 'Файл сертификата выдаваемый банком, используется для авторизации по протоколу ssl',
+        'control_type' => waHtmlControl::FILE,
     ),
-    'password'    => array(
+    'keyFile'    => array(
         'value'        => '',
-        'title'        => 'Пароль магазина',
-        'description'  => 'Пароль магазина, полученный при подключении',
-        'control_type' => 'input',
+        'title'        => '*.key файл',
+        'description'  => 'Файл сертификата выдаваемый банком, используется для авторизации по протоколу ssl',
+        'control_type' => waHtmlControl::FILE,
+    ),
+    'crtFile'    => array(
+        'value'        => '',
+        'title'        => '*.crt файл',
+        'description'  => 'Файл сертификата выдаваемый банком, используется для авторизации по протоколу ssl',
+        'control_type' => waHtmlControl::FILE,
     ),
     'sandbox'  => array(
         'value'        => '1',
